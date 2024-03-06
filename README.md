@@ -35,7 +35,7 @@ Users should be able to:
 
 ### What I learned
 
-Using React to deal with complex changing state
+Using React to deal with complex changing state, Learn to use JavaScript ES6 Spread Operator
 
 ## Author
 
