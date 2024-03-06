@@ -10,25 +10,29 @@ function App() {
   function changeHandle(event){
     const {value, name} = event.target; //taking value, name from event.target
     setContact(prevValue => {
-      if(name === "fName"){
-        return {
-          fName: value,
-          lName: prevValue.fName,
-          email: prevValue.lName
-        };
-      } else if(name === "lName"){
-        return {
-          fName: prevValue.fName,
-          lName: value,
-          email: prevValue.fName
-        };
-      } else if(name === "email"){
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: value
-        };
-      }
+      return {
+        ...prevValue, //added Spread Operator to shorten code
+        [name] : value
+      };
+      // if(name === "fName"){
+      //   return {
+      //     fName: value,
+      //     lName: prevValue.fName,
+      //     email: prevValue.lName
+      //   };
+      // } else if(name === "lName"){
+      //   return {
+      //     fName: prevValue.fName,
+      //     lName: value,
+      //     email: prevValue.fName
+      //   };
+      // } else if(name === "email"){
+      //   return {
+      //     fName: prevValue.fName,
+      //     lName: prevValue.lName,
+      //     email: value
+      //   };
+      // }
     });
   }
   return (
