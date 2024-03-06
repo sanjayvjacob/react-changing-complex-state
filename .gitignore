@@ -1,0 +1,27 @@
+# Ignore directories
+node_modules/
+dist/
+build/
+
+# Ignore Files with a Specific Extension:
+.log
+.db
+.DS_Store
+
+# Ignore Files Matching a Specific Pattern:
+/logs/
+/tmp/
+/.*.swp
+
+# Ignore Files in a Specific Directory:
+assets/cache/
+src/generated/
+
+# Ignore Specific Files:
+.env
+.vscode/
+Thumbs.db
+
+# Ignore all .md files, except README.md:
+*.md
+!README.md
