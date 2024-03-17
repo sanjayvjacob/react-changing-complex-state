@@ -1,4 +1,4 @@
-# Appbrewery - React Complex Changing State
+# Appbrewery - Login App - React Complex Changing State
 
 This is a solution to the Changing Complex State Project from Appbrewery.com
 
